@@ -1,13 +1,9 @@
 
 import React from 'react';
-import AppointmentBooking from '../components/AppointmentBooking';
+import { Navigate } from 'react-router-dom';
 
 const Index = () => {
-  return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-green-50">
-      <AppointmentBooking />
-    </div>
-  );
+  return <Navigate to="/" replace />;
 };
 
 export default Index;
