@@ -9,6 +9,9 @@ import Home from "./pages/Home";
 import ReservarCita from "./pages/ReservarCita";
 import CitaVirtual from "./pages/CitaVirtual";
 import MisCitas from "./pages/MisCitas";
+import MiPerfil from "./pages/MiPerfil";
+import HistorialMedico from "./pages/HistorialMedico";
+import Configuracion from "./pages/Configuracion";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -25,9 +28,9 @@ const App = () => (
             <Route path="/reservar" element={<ReservarCita />} />
             <Route path="/cita-virtual" element={<CitaVirtual />} />
             <Route path="/mis-citas" element={<MisCitas />} />
-            <Route path="/perfil" element={<div className="text-center py-12"><h2 className="text-2xl font-bold">Mi Perfil - En construcción</h2></div>} />
-            <Route path="/historial" element={<div className="text-center py-12"><h2 className="text-2xl font-bold">Historial Médico - En construcción</h2></div>} />
-            <Route path="/configuracion" element={<div className="text-center py-12"><h2 className="text-2xl font-bold">Configuración - En construcción</h2></div>} />
+            <Route path="/perfil" element={<MiPerfil />} />
+            <Route path="/historial" element={<HistorialMedico />} />
+            <Route path="/configuracion" element={<Configuracion />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
